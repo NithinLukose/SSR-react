@@ -1,6 +1,8 @@
 import App from "./App";
 import Home from "./pages/Home";
 import UsersList from "./pages/UsersList";
+import NotFoundPage from "./pages/NotFoundPage";
+import Admins from "./pages/Admins";
 
 export default [
   {
@@ -14,6 +16,13 @@ export default [
       {
         ...UsersList,
         path: "/users",
+      },
+      {
+        ...Admins,
+        path: "/admins",
+      },
+      {
+        ...NotFoundPage,
       },
     ],
   },
